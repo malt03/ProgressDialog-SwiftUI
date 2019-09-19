@@ -14,9 +14,14 @@ public struct ProgressDialog: View {
     public init() {}
     
     public var body: some View {
-        Color(custom: "Background").edgesIgnoringSafeArea(.all)
+        let progress = ProgressView(progress: info.progress ?? 0).frame(width: 60, height: 60, alignment: .center)
+        let indicator = IndicatorView().frame(width: 60, height: 60, alignment: .center)
+        let isProgress = info.progress != nil
+        
+        return Color(custom: "Background").edgesIgnoringSafeArea(.all)
             .overlay(Color(custom: "DialogBackground").frame(width: 120, height: 120, alignment: .center).cornerRadius(16))
-            .overlay(ProgressView(progress: info.progress ?? 0).frame(width: 60, height: 60, alignment: .center))
+            .overlay(progress.opacity(isProgress ? 1 : 0))
+            .overlay(indicator.opacity(isProgress ? 0 : 1))
             .modifier(OpacityModifier(opacity: info.isPresenting ? 1 : 0))
     }
     
