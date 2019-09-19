@@ -9,61 +9,28 @@
 import SwiftUI
 
 public struct ProgressDialog: View {
+    @ObservedObject var info = ProgressInfo.shared
+    
     public init() {}
     
     public var body: some View {
         Color(custom: "Background").edgesIgnoringSafeArea(.all)
             .overlay(Color(custom: "DialogBackground").frame(width: 120, height: 120, alignment: .center).cornerRadius(16))
-            .overlay(Progress().frame(width: 60, height: 60, alignment: .center))
+            .overlay(ProgressView(progress: info.progress ?? 0).frame(width: 60, height: 60, alignment: .center))
+            .modifier(OpacityModifier(opacity: info.isPresenting ? 1 : 0))
     }
     
-    struct Progress: View {
-        @State private var animatableData: Double = 0
-        var body: some View {
-            Color.clear
-                .modifier(ProgressModifier(animatableData: animatableData))
-                .onAppear {
-                    withAnimation(Animation.linear(duration: 4).repeatForever(autoreverses: false)) {
-                        self.animatableData = 1
-                    }
-                }
+    struct OpacityModifier: AnimatableModifier {
+        var opacity: Double
+        var animatableData: Double {
+            get { opacity }
+            set { opacity = newValue }
         }
-    }
-
-    struct ProgressModifier: AnimatableModifier {
-        var animatableData: Double
         
         func body(content: Content) -> some View {
-            let start: Double
-            let end: Double
-            if animatableData <= 0.5 {
-                start = animatableData * 360 * 4
-                end = animatableData * 360 * 2
-            } else {
-                start = (animatableData - 0.5) * 360 * 2
-                end = (animatableData - 0.5) * 360 * 4
-            }
-            return content.overlay(
-                Arg(start: start - 90, end: end - 90)
-                    .foregroundColor(Color(custom: "Progress"))
-            )
-        }
-        
-        struct Arg: Shape {
-            let start: Double
-            let end: Double
-            
-            func path(in rect: CGRect) -> Path {
-                var path = Path()
-                path.addArc(
-                    center: CGPoint(x: rect.width / 2, y: rect.height / 2),
-                    radius: min(rect.width, rect.height) / 2,
-                    startAngle: .degrees(start),
-                    endAngle: .degrees(end),
-                    clockwise: true
-                )
-                return path.strokedPath(StrokeStyle(lineWidth: 4, lineCap: .round))
-            }
+            var optionalContent: Optional = content
+            if opacity == 0 { optionalContent = nil }
+            return optionalContent?.opacity(opacity)
         }
     }
 }
