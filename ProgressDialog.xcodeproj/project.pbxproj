@@ -14,6 +14,8 @@
 		ED9D16E82331C71200DDA85D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E72331C71200DDA85D /* Preview Assets.xcassets */; };
 		ED9D16EB2331C71200DDA85D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E92331C71200DDA85D /* LaunchScreen.storyboard */; };
 		ED9D16F12331C73800DDA85D /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16F02331C73800DDA85D /* ProgressDialog.swift */; };
+		ED9D17362333038900DDA85D /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D17352333038900DDA85D /* Color.xcassets */; };
+		ED9D17382333048200DDA85D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D17372333048200DDA85D /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		ED9D16EA2331C71200DDA85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9D16EC2331C71200DDA85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9D16F02331C73800DDA85D /* ProgressDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
+		ED9D17352333038900DDA85D /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		ED9D17372333048200DDA85D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				ED9D16F02331C73800DDA85D /* ProgressDialog.swift */,
+				ED9D17372333048200DDA85D /* Color+Extension.swift */,
 				ED9D16D02331C25B00DDA85D /* Info.plist */,
+				ED9D17352333038900DDA85D /* Color.xcassets */,
 			);
 			path = ProgressDialog;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9D17362333038900DDA85D /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9D16F12331C73800DDA85D /* ProgressDialog.swift in Sources */,
+				ED9D17382333048200DDA85D /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

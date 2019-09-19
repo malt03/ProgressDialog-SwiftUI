@@ -12,9 +12,9 @@ public struct ProgressDialog: View {
     public init() {}
     
     public var body: some View {
-        Color(UIColor(white: 0, alpha: 0.5)).edgesIgnoringSafeArea(.all)
-            .overlay(Color.white.frame(width: 120, height: 120, alignment: .center).cornerRadius(16))
-            .overlay(Progress().frame(width: 80, height: 80, alignment: .center))
+        Color(custom: "Background").edgesIgnoringSafeArea(.all)
+            .overlay(Color(custom: "DialogBackground").frame(width: 120, height: 120, alignment: .center).cornerRadius(16))
+            .overlay(Progress().frame(width: 60, height: 60, alignment: .center))
     }
     
     struct Progress: View {
@@ -43,7 +43,10 @@ public struct ProgressDialog: View {
                 start = (animatableData - 0.5) * 360 * 2
                 end = (animatableData - 0.5) * 360 * 4
             }
-            return content.overlay(Arg(start: start - 90, end: end - 90))
+            return content.overlay(
+                Arg(start: start - 90, end: end - 90)
+                    .foregroundColor(Color(custom: "Progress"))
+            )
         }
         
         struct Arg: Shape {
