@@ -13,13 +13,14 @@
 		ED9D16E52331C71200DDA85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E42331C71200DDA85D /* Assets.xcassets */; };
 		ED9D16E82331C71200DDA85D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E72331C71200DDA85D /* Preview Assets.xcassets */; };
 		ED9D16EB2331C71200DDA85D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E92331C71200DDA85D /* LaunchScreen.storyboard */; };
-		ED9D16F12331C73800DDA85D /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16F02331C73800DDA85D /* ProgressDialog.swift */; };
+		ED9D16F12331C73800DDA85D /* ProgressDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16F02331C73800DDA85D /* ProgressDialogView.swift */; };
 		ED9D17362333038900DDA85D /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D17352333038900DDA85D /* Color.xcassets */; };
 		ED9D17382333048200DDA85D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D17372333048200DDA85D /* Color+Extension.swift */; };
 		ED9D173A233307B800DDA85D /* ProgressInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D1739233307B800DDA85D /* ProgressInfo.swift */; };
 		ED9D173C233313EC00DDA85D /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D173B233313EC00DDA85D /* IndicatorView.swift */; };
 		ED9D173E2333144500DDA85D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D173D2333144500DDA85D /* ProgressView.swift */; };
 		ED9D17402333152C00DDA85D /* Arg.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D173F2333152C00DDA85D /* Arg.swift */; };
+		EDE4C422233503540098B3AA /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE4C421233503540098B3AA /* ProgressDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +44,14 @@
 		ED9D16E72331C71200DDA85D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED9D16EA2331C71200DDA85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9D16EC2331C71200DDA85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED9D16F02331C73800DDA85D /* ProgressDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
+		ED9D16F02331C73800DDA85D /* ProgressDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDialogView.swift; sourceTree = "<group>"; };
 		ED9D17352333038900DDA85D /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		ED9D17372333048200DDA85D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		ED9D1739233307B800DDA85D /* ProgressInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressInfo.swift; sourceTree = "<group>"; };
 		ED9D173B233313EC00DDA85D /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		ED9D173D2333144500DDA85D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		ED9D173F2333152C00DDA85D /* Arg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arg.swift; sourceTree = "<group>"; };
+		EDE4C421233503540098B3AA /* ProgressDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,8 @@
 		ED9D16CE2331C25B00DDA85D /* ProgressDialog */ = {
 			isa = PBXGroup;
 			children = (
-				ED9D16F02331C73800DDA85D /* ProgressDialog.swift */,
+				EDE4C421233503540098B3AA /* ProgressDialog.swift */,
+				ED9D16F02331C73800DDA85D /* ProgressDialogView.swift */,
 				ED9D173B233313EC00DDA85D /* IndicatorView.swift */,
 				ED9D173D2333144500DDA85D /* ProgressView.swift */,
 				ED9D173F2333152C00DDA85D /* Arg.swift */,
@@ -238,9 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9D16F12331C73800DDA85D /* ProgressDialog.swift in Sources */,
+				ED9D16F12331C73800DDA85D /* ProgressDialogView.swift in Sources */,
 				ED9D173E2333144500DDA85D /* ProgressView.swift in Sources */,
 				ED9D17402333152C00DDA85D /* Arg.swift in Sources */,
+				EDE4C422233503540098B3AA /* ProgressDialog.swift in Sources */,
 				ED9D173A233307B800DDA85D /* ProgressInfo.swift in Sources */,
 				ED9D17382333048200DDA85D /* Color+Extension.swift in Sources */,
 				ED9D173C233313EC00DDA85D /* IndicatorView.swift in Sources */,

@@ -9,22 +9,6 @@
 import Foundation
 import SwiftUI
 
-public final class ProgressInfo: ObservableObject {
-    public static let shared = ProgressInfo()
-    
-    @Published private(set) var isPresenting = false
-    @Published private(set) var progress: Double? = nil
-    
-    public func present(progress: Double? = nil) {
-        withAnimation {
-            self.progress = progress
-            isPresenting = true
-        }
-    }
-    
-    public func dismiss() {
-        withAnimation {
-            isPresenting = false
-        }
-    }
+final class ProgressInfo: ObservableObject {
+    @Published var progress: Double? = nil
 }
