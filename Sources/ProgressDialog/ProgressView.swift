@@ -24,8 +24,8 @@ struct ProgressView: View {
         
         func body(content: Content) -> some View {
             return content
-                .overlay(Arg(start: 360, end: 0).foregroundColor(Color(custom: "ProgressPlaceholder")))
-                .overlay(Arg(start: progress * 360, end: 0).foregroundColor(Color(custom: "Progress")))
+                .overlay(ProgressPlaceholderArg())
+                .overlay(ProgressArg(start: progress * 360, end: 0))
         }
     }
 }

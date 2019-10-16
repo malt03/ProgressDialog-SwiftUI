@@ -24,3 +24,22 @@ struct Arg: Shape {
         return path.strokedPath(StrokeStyle(lineWidth: 4, lineCap: .round))
     }
 }
+
+struct ProgressArg: View {
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
+    let start: Double
+    let end: Double
+    
+    var body: some View {
+        Arg(start: start, end: end).foregroundColor(Color.progress(for: colorScheme))
+    }
+}
+
+struct ProgressPlaceholderArg: View {
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
+    var body: some View {
+        Arg(start: 360, end: 0).foregroundColor(Color.progressPlaceholder(for: colorScheme))
+    }
+}

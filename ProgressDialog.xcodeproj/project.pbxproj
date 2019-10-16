@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ED92EA4C2356A5A800F94FBB /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA432356A5A800F94FBB /* IndicatorView.swift */; };
 		ED92EA4D2356A5A800F94FBB /* Arg.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA442356A5A800F94FBB /* Arg.swift */; };
-		ED92EA4E2356A5A800F94FBB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED92EA452356A5A800F94FBB /* Color.xcassets */; };
 		ED92EA4F2356A5A800F94FBB /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA462356A5A800F94FBB /* ProgressView.swift */; };
 		ED92EA502356A5A800F94FBB /* ProgressInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA472356A5A800F94FBB /* ProgressInfo.swift */; };
 		ED92EA512356A5A800F94FBB /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA482356A5A800F94FBB /* Color+Extension.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		ED92EA432356A5A800F94FBB /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = Sources/ProgressDialog/IndicatorView.swift; sourceTree = SOURCE_ROOT; };
 		ED92EA442356A5A800F94FBB /* Arg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arg.swift; path = Sources/ProgressDialog/Arg.swift; sourceTree = SOURCE_ROOT; };
-		ED92EA452356A5A800F94FBB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Color.xcassets; path = Sources/ProgressDialog/Color.xcassets; sourceTree = SOURCE_ROOT; };
 		ED92EA462356A5A800F94FBB /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = Sources/ProgressDialog/ProgressView.swift; sourceTree = SOURCE_ROOT; };
 		ED92EA472356A5A800F94FBB /* ProgressInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressInfo.swift; path = Sources/ProgressDialog/ProgressInfo.swift; sourceTree = SOURCE_ROOT; };
 		ED92EA482356A5A800F94FBB /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Sources/ProgressDialog/Color+Extension.swift"; sourceTree = SOURCE_ROOT; };
@@ -101,7 +99,6 @@
 				ED92EA472356A5A800F94FBB /* ProgressInfo.swift */,
 				ED92EA462356A5A800F94FBB /* ProgressView.swift */,
 				ED92EA4B2356A5A800F94FBB /* Info.plist */,
-				ED92EA452356A5A800F94FBB /* Color.xcassets */,
 			);
 			path = ProgressDialog;
 			sourceTree = "<group>";
@@ -220,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED92EA4E2356A5A800F94FBB /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

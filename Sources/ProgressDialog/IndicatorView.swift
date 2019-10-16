@@ -33,10 +33,7 @@ struct IndicatorView: View {
                 start = (animatableData - 0.5) * 360 * 2
                 end = (animatableData - 0.5) * 360 * 4
             }
-            return content.overlay(
-                Arg(start: start, end: end)
-                    .foregroundColor(Color(custom: "Progress"))
-            )
+            return content.overlay(ProgressArg(start: start, end: end))
         }
     }
 }
