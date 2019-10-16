@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED92EA4C2356A5A800F94FBB /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA432356A5A800F94FBB /* IndicatorView.swift */; };
+		ED92EA4D2356A5A800F94FBB /* Arg.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA442356A5A800F94FBB /* Arg.swift */; };
+		ED92EA4E2356A5A800F94FBB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED92EA452356A5A800F94FBB /* Color.xcassets */; };
+		ED92EA4F2356A5A800F94FBB /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA462356A5A800F94FBB /* ProgressView.swift */; };
+		ED92EA502356A5A800F94FBB /* ProgressInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA472356A5A800F94FBB /* ProgressInfo.swift */; };
+		ED92EA512356A5A800F94FBB /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA482356A5A800F94FBB /* Color+Extension.swift */; };
+		ED92EA522356A5A800F94FBB /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA492356A5A800F94FBB /* ProgressDialog.swift */; };
+		ED92EA532356A5A800F94FBB /* ProgressDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED92EA4A2356A5A800F94FBB /* ProgressDialogView.swift */; };
 		ED9D16DF2331C71100DDA85D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16DE2331C71100DDA85D /* AppDelegate.swift */; };
 		ED9D16E12331C71100DDA85D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16E02331C71100DDA85D /* SceneDelegate.swift */; };
 		ED9D16E32331C71100DDA85D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16E22331C71100DDA85D /* ContentView.swift */; };
 		ED9D16E52331C71200DDA85D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E42331C71200DDA85D /* Assets.xcassets */; };
 		ED9D16E82331C71200DDA85D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E72331C71200DDA85D /* Preview Assets.xcassets */; };
 		ED9D16EB2331C71200DDA85D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9D16E92331C71200DDA85D /* LaunchScreen.storyboard */; };
-		ED9D16F12331C73800DDA85D /* ProgressDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D16F02331C73800DDA85D /* ProgressDialogView.swift */; };
-		ED9D17362333038900DDA85D /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9D17352333038900DDA85D /* Color.xcassets */; };
-		ED9D17382333048200DDA85D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D17372333048200DDA85D /* Color+Extension.swift */; };
-		ED9D173A233307B800DDA85D /* ProgressInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D1739233307B800DDA85D /* ProgressInfo.swift */; };
-		ED9D173C233313EC00DDA85D /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D173B233313EC00DDA85D /* IndicatorView.swift */; };
-		ED9D173E2333144500DDA85D /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D173D2333144500DDA85D /* ProgressView.swift */; };
-		ED9D17402333152C00DDA85D /* Arg.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D173F2333152C00DDA85D /* Arg.swift */; };
-		EDE4C422233503540098B3AA /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE4C421233503540098B3AA /* ProgressDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED92EA432356A5A800F94FBB /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = Sources/ProgressDialog/IndicatorView.swift; sourceTree = SOURCE_ROOT; };
+		ED92EA442356A5A800F94FBB /* Arg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Arg.swift; path = Sources/ProgressDialog/Arg.swift; sourceTree = SOURCE_ROOT; };
+		ED92EA452356A5A800F94FBB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Color.xcassets; path = Sources/ProgressDialog/Color.xcassets; sourceTree = SOURCE_ROOT; };
+		ED92EA462356A5A800F94FBB /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = Sources/ProgressDialog/ProgressView.swift; sourceTree = SOURCE_ROOT; };
+		ED92EA472356A5A800F94FBB /* ProgressInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressInfo.swift; path = Sources/ProgressDialog/ProgressInfo.swift; sourceTree = SOURCE_ROOT; };
+		ED92EA482356A5A800F94FBB /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+Extension.swift"; path = "Sources/ProgressDialog/Color+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		ED92EA492356A5A800F94FBB /* ProgressDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressDialog.swift; path = Sources/ProgressDialog/ProgressDialog.swift; sourceTree = SOURCE_ROOT; };
+		ED92EA4A2356A5A800F94FBB /* ProgressDialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressDialogView.swift; path = Sources/ProgressDialog/ProgressDialogView.swift; sourceTree = SOURCE_ROOT; };
+		ED92EA4B2356A5A800F94FBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = Sources/ProgressDialog/Info.plist; sourceTree = SOURCE_ROOT; };
 		ED9D16CC2331C25B00DDA85D /* ProgressDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED9D16D02331C25B00DDA85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9D16DC2331C71100DDA85D /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9D16DE2331C71100DDA85D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9D16E02331C71100DDA85D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,14 +52,6 @@
 		ED9D16E72331C71200DDA85D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED9D16EA2331C71200DDA85D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9D16EC2331C71200DDA85D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED9D16F02331C73800DDA85D /* ProgressDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDialogView.swift; sourceTree = "<group>"; };
-		ED9D17352333038900DDA85D /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		ED9D17372333048200DDA85D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		ED9D1739233307B800DDA85D /* ProgressInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressInfo.swift; sourceTree = "<group>"; };
-		ED9D173B233313EC00DDA85D /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
-		ED9D173D2333144500DDA85D /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		ED9D173F2333152C00DDA85D /* Arg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arg.swift; sourceTree = "<group>"; };
-		EDE4C421233503540098B3AA /* ProgressDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,15 +93,15 @@
 		ED9D16CE2331C25B00DDA85D /* ProgressDialog */ = {
 			isa = PBXGroup;
 			children = (
-				EDE4C421233503540098B3AA /* ProgressDialog.swift */,
-				ED9D16F02331C73800DDA85D /* ProgressDialogView.swift */,
-				ED9D173B233313EC00DDA85D /* IndicatorView.swift */,
-				ED9D173D2333144500DDA85D /* ProgressView.swift */,
-				ED9D173F2333152C00DDA85D /* Arg.swift */,
-				ED9D1739233307B800DDA85D /* ProgressInfo.swift */,
-				ED9D17372333048200DDA85D /* Color+Extension.swift */,
-				ED9D16D02331C25B00DDA85D /* Info.plist */,
-				ED9D17352333038900DDA85D /* Color.xcassets */,
+				ED92EA442356A5A800F94FBB /* Arg.swift */,
+				ED92EA482356A5A800F94FBB /* Color+Extension.swift */,
+				ED92EA432356A5A800F94FBB /* IndicatorView.swift */,
+				ED92EA492356A5A800F94FBB /* ProgressDialog.swift */,
+				ED92EA4A2356A5A800F94FBB /* ProgressDialogView.swift */,
+				ED92EA472356A5A800F94FBB /* ProgressInfo.swift */,
+				ED92EA462356A5A800F94FBB /* ProgressView.swift */,
+				ED92EA4B2356A5A800F94FBB /* Info.plist */,
+				ED92EA452356A5A800F94FBB /* Color.xcassets */,
 			);
 			path = ProgressDialog;
 			sourceTree = "<group>";
@@ -184,12 +184,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Koji Murata";
 				TargetAttributes = {
 					ED9D16CB2331C25B00DDA85D = {
 						CreatedOnToolsVersion = 11.0;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1120;
 					};
 					ED9D16DB2331C71100DDA85D = {
 						CreatedOnToolsVersion = 11.0;
@@ -220,7 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9D17362333038900DDA85D /* Color.xcassets in Resources */,
+				ED92EA4E2356A5A800F94FBB /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,13 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9D16F12331C73800DDA85D /* ProgressDialogView.swift in Sources */,
-				ED9D173E2333144500DDA85D /* ProgressView.swift in Sources */,
-				ED9D17402333152C00DDA85D /* Arg.swift in Sources */,
-				EDE4C422233503540098B3AA /* ProgressDialog.swift in Sources */,
-				ED9D173A233307B800DDA85D /* ProgressInfo.swift in Sources */,
-				ED9D17382333048200DDA85D /* Color+Extension.swift in Sources */,
-				ED9D173C233313EC00DDA85D /* IndicatorView.swift in Sources */,
+				ED92EA522356A5A800F94FBB /* ProgressDialog.swift in Sources */,
+				ED92EA4D2356A5A800F94FBB /* Arg.swift in Sources */,
+				ED92EA512356A5A800F94FBB /* Color+Extension.swift in Sources */,
+				ED92EA4C2356A5A800F94FBB /* IndicatorView.swift in Sources */,
+				ED92EA502356A5A800F94FBB /* ProgressInfo.swift in Sources */,
+				ED92EA4F2356A5A800F94FBB /* ProgressView.swift in Sources */,
+				ED92EA532356A5A800F94FBB /* ProgressDialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +412,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ProgressDialog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ProgressDialog/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,7 +437,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ProgressDialog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/ProgressDialog/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
